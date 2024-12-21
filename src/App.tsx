@@ -1,9 +1,26 @@
+import { useEffect } from "react";
+import billsImgUrl from "./img/bills.png";
+import jetsImgUrl from "./img/jets.png";
 import "./App.scss";
 
 const App = () => {
+  useEffect(() => {
+    const billsImg = document.getElementById("bills-img") as HTMLImageElement | null;
+    if (billsImg) {
+      billsImg.src = billsImgUrl;
+    }
+    const jetsImg = document.getElementById("jets-img") as HTMLImageElement | null;
+    if (jetsImg) {
+      jetsImg.src = jetsImgUrl;
+    }
+  }, []);
+
   return (
     <div>
       <h1>Buffalo December 2024</h1>
+
+      <img id="bills-img" />
+      <img id="jets-img" />
 
       <h2>Hotel</h2>
       <div>
