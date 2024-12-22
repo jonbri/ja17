@@ -3,6 +3,7 @@ import billsImgUrl from "./img/bills.png";
 import jetsImgUrl from "./img/jets.png";
 import rageImgUrl from "./img/rage-mad.gif";
 import "./App.scss";
+import "@fontsource/ubuntu";
 
 const App = () => {
   useEffect(() => {
