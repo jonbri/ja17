@@ -69,6 +69,7 @@ const App = () => {
             <li>Make a poster</li>
             <li>Toronto?</li>
             <li>Basho mp3</li>
+            <li>Move tickets to TicketMaster Wallet so you don't need to rely on the network</li>
           </ul>
         </div>
       </div>
