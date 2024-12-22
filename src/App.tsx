@@ -1,16 +1,19 @@
 import { useEffect } from "react";
 import billsImgUrl from "./img/bills.png";
 import jetsImgUrl from "./img/jets.png";
+import rageImgUrl from "./img/rage-mad.gif";
 import "./App.scss";
 
 const App = () => {
   useEffect(() => {
-    const [billsImg, jetsImg] = [
+    const [billsImg, jetsImg, rageImg] = [
       document.getElementById("bills-img") as HTMLImageElement | null,
       document.getElementById("jets-img") as HTMLImageElement | null,
+      document.getElementById("rage-img") as HTMLImageElement | null,
     ];
     if (billsImg) billsImg.src = billsImgUrl;
     if (jetsImg) jetsImg.src = jetsImgUrl;
+    if (rageImg) rageImg.src = rageImgUrl;
   }, []);
 
   return (
@@ -18,6 +21,7 @@ const App = () => {
       <header>
         <h1>
           <img id="bills-img" />
+          <img id="rage-img" />
           <img id="jets-img" />
         </h1>
       </header>
