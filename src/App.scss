@@ -30,13 +30,13 @@ h2 {
 }
 @keyframes crashRight {
   0% {
-    transform: translateY(0);
+    transform: translateX(-100px);
   }
   50% {
-    transform: translateX(500px);
+    transform: translateX(300px);
   }
   100% {
-    transform: translateY(0);
+    transform: translateX(-50px);
   }
 }
 
@@ -52,14 +52,18 @@ h2 {
     img {
       width: 100px;
       height: 100px;
-      &:first-child {
-        animation: crashLeft 3s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      &#bills-img {
+        z-index: 2;
+        position: absolute;
+        animation: crashLeft 2s infinite cubic-bezier(0, -0.55, 0.27, 1.55);
       }
       &:nth-child(2) {
         border: 5px solid gold;
       }
-      &:last-child {
-        animation: crashRight 4s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      &#jets-img {
+        z-index: 1;
+        position: absolute;
+        animation: crashRight 4s infinite;
       }
     }
   }
