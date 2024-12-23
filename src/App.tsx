@@ -18,8 +18,12 @@ const App = () => {
     if (rageImg) rageImg.src = rageImgUrl;
   }, []);
 
-  // get the current date of the month
-  const currentDate = new Date().getDate();
+  const getDayClassName = (day: number) => {
+    const today = new Date().getDate();
+    if (day === today) return "day today";
+    if (day < today) return "day past";
+    return "day future";
+  };
 
   return (
     <div id="container">
@@ -34,45 +38,45 @@ const App = () => {
       <div id="content">
         <div className="section">
           <div id="calendar">
-            <div className={classnames("day")}>
+            <div className={classnames(getDayClassName(22))}>
               <header>Sun Dec 22</header>
-              <div>Content goes here {currentDate}</div>
+              <div></div>
             </div>
-            <div className={classnames("day")}>
+            <div className={classnames(getDayClassName(23))}>
               <header>Mon Dec 23</header>
-              <div>Content goes here</div>
+              <div></div>
             </div>
-            <div className={classnames("day")}>
+            <div className={classnames(getDayClassName(24))}>
               <header>Tue Dec 24</header>
-              <div>Content goes here</div>
+              <div></div>
             </div>
-            <div className={classnames("day")}>
+            <div className={classnames(getDayClassName(25))}>
               <header>Wed Dec 25</header>
               <div>Xmas. Leave Cary</div>
             </div>
-            <div className={classnames("day")}>
+            <div className={classnames(getDayClassName(26))}>
               <header>Thu Dec 26</header>
-              <div>Hotel Check-in</div>
+              <div>Hotel Check-in: 3:00</div>
             </div>
-            <div className={classnames("day")}>
+            <div className={classnames(getDayClassName(27))}>
               <header>Fri Dec 27</header>
-              <div>Content goes here</div>
+              <div></div>
             </div>
-            <div className={classnames("day")}>
+            <div className={classnames(getDayClassName(28))}>
               <header>Sat Dec 28</header>
-              <div>Content goes here</div>
+              <div></div>
             </div>
-            <div className={classnames("day")}>
+            <div className={classnames(getDayClassName(29))}>
               <header>Sun Dec 29</header>
               <div>Bills vs. Jets</div>
             </div>
-            <div className={classnames("day")}>
+            <div className={classnames(getDayClassName(30))}>
               <header>Mon Dec 30</header>
-              <div>Content goes here</div>
+              <div>Hotel Check-out: noon</div>
             </div>
-            <div className={classnames("day")}>
+            <div className={classnames(getDayClassName(31))}>
               <header>Tues Dec 31</header>
-              <div>Content goes here</div>
+              <div></div>
             </div>
           </div>
         </div>

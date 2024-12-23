@@ -1,10 +1,13 @@
 $red: #c60c30;
 $blue: #00338d;
 $white: #fff;
+$gold: #ffb612;
+$gray: #ccc;
+$black: #000;
 
 body {
   background-color: $blue;
-  color: black;
+  color: $black;
   padding: 0;
   font-size: 1em;
   font-family: "Ubuntu", sans-serif;
@@ -58,7 +61,7 @@ h2 {
         animation: crashLeft 2s infinite cubic-bezier(0, -0.55, 0.27, 1.55);
       }
       &:nth-child(2) {
-        border: 5px solid gold;
+        border: 5px solid $gold;
       }
       &#jets-img {
         z-index: 1;
@@ -88,11 +91,25 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   .day {
-    border: 1px solid black;
+    padding: 4px;
+    border: 1px solid $black;
     width: 100px;
     height: 100px;
     min-height: 100px;
     min-height: 100px;
+
+    &.past {
+      background-color: $gray;
+      header {
+        background-color: $gray;
+      }
+    }
+    &.today {
+      background-color: $gold;
+    }
+    &.future {
+      background-color: $white;
+    }
 
     header {
       background-color: $red;
