@@ -29,6 +29,51 @@ const App = () => {
 
       <div id="content">
         <div className="section">
+          <div id="calendar">
+            <div className="day">
+              <header>Sun Dec 22</header>
+              <div>Content goes here</div>
+            </div>
+            <div className="day">
+              <header>Mon Dec 23</header>
+              <div>Content goes here</div>
+            </div>
+            <div className="day">
+              <header>Tue Dec 24</header>
+              <div>Content goes here</div>
+            </div>
+            <div className="day">
+              <header>Wed Dec 25</header>
+              <div>Content goes here</div>
+            </div>
+            <div className="day">
+              <header>Thu Dec 26</header>
+              <div>Content goes here</div>
+            </div>
+            <div className="day">
+              <header>Fri Dec 27</header>
+              <div>Content goes here</div>
+            </div>
+            <div className="day">
+              <header>Sat Dec 28</header>
+              <div>Content goes here</div>
+            </div>
+            <div className="day">
+              <header>Sun Dec 29</header>
+              <div>Content goes here</div>
+            </div>
+            <div className="day">
+              <header>Mon Dec 30</header>
+              <div>Content goes here</div>
+            </div>
+            <div className="day">
+              <header>Tues Dec 31</header>
+              <div>Content goes here</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="section">
           <h2>Hotel</h2>
           <div>Suite, 1 Bedroom</div>
           <div>
