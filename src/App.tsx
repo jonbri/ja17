@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import classnames from "classnames";
 import billsImgUrl from "./img/bills.png";
 import jetsImgUrl from "./img/jets.png";
 import rageImgUrl from "./img/rage-mad.gif";
@@ -17,6 +18,9 @@ const App = () => {
     if (rageImg) rageImg.src = rageImgUrl;
   }, []);
 
+  // get the current date of the month
+  const currentDate = new Date().getDate();
+
   return (
     <div id="container">
       <header>
@@ -30,43 +34,43 @@ const App = () => {
       <div id="content">
         <div className="section">
           <div id="calendar">
-            <div className="day">
+            <div className={classnames("day")}>
               <header>Sun Dec 22</header>
-              <div>Content goes here</div>
+              <div>Content goes here {currentDate}</div>
             </div>
-            <div className="day">
+            <div className={classnames("day")}>
               <header>Mon Dec 23</header>
               <div>Content goes here</div>
             </div>
-            <div className="day">
+            <div className={classnames("day")}>
               <header>Tue Dec 24</header>
               <div>Content goes here</div>
             </div>
-            <div className="day">
+            <div className={classnames("day")}>
               <header>Wed Dec 25</header>
-              <div>Content goes here</div>
+              <div>Xmas. Leave Cary</div>
             </div>
-            <div className="day">
+            <div className={classnames("day")}>
               <header>Thu Dec 26</header>
-              <div>Content goes here</div>
+              <div>Hotel Check-in</div>
             </div>
-            <div className="day">
+            <div className={classnames("day")}>
               <header>Fri Dec 27</header>
               <div>Content goes here</div>
             </div>
-            <div className="day">
+            <div className={classnames("day")}>
               <header>Sat Dec 28</header>
               <div>Content goes here</div>
             </div>
-            <div className="day">
+            <div className={classnames("day")}>
               <header>Sun Dec 29</header>
-              <div>Content goes here</div>
+              <div>Bills vs. Jets</div>
             </div>
-            <div className="day">
+            <div className={classnames("day")}>
               <header>Mon Dec 30</header>
               <div>Content goes here</div>
             </div>
-            <div className="day">
+            <div className={classnames("day")}>
               <header>Tues Dec 31</header>
               <div>Content goes here</div>
             </div>
