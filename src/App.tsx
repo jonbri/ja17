@@ -68,6 +68,7 @@ const App = () => {
             </div>
             <img id="bills-img" className="helmet" />
             <img id="jets-img" className="helmet" />
+            <div id="title">Buffalo 2024</div>
           </div>
         </h1>
       </header>
