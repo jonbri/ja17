@@ -58,16 +58,16 @@ const App = () => {
       <header>
         <h1>
           <div>
-            <span id="fire">
+            <div id="fire">
               <img id="rage-img0" />
               <img id="rage-img1" />
               <img id="rage-img2" />
               <img id="rage-img3" />
               <img id="rage-img4" />
               <img id="rage-img5" />
-            </span>
-            <img id="bills-img" />
-            <img id="jets-img" />
+            </div>
+            <img id="bills-img" className="helmet" />
+            <img id="jets-img" className="helmet" />
           </div>
         </h1>
       </header>
