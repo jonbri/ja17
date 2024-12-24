@@ -28,6 +28,20 @@ $black: #000;
     transform: translateX(-50px);
   }
 }
+@keyframes scrollHorizontally {
+  0% {
+    transform: translate(100px, 0px);
+  }
+  25% {
+    transform: translate(-350px, 10px);
+  }
+  75% {
+    transform: translate(300px, 20px);
+  }
+  100% {
+    transform: translate(100px, 5px);
+  }
+}
 
 body {
   background-color: $blue;
@@ -50,18 +64,18 @@ h2 {
   padding: 6px;
   > header {
     text-align: center;
-    height: 120px;
+    height: 100px;
     position: relative;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
     h1 > div {
-      border: 4px solid $gold;
+      border: 3px solid $gold;
       border-radius: 20px;
-      height: 100px;
+      height: 90px;
       .helmet {
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
         position: absolute;
         top: 20px;
         &#bills-img {
@@ -72,7 +86,7 @@ h2 {
         &#jets-img {
           z-index: 1;
           left: 55%;
-          animation: crashRight 4s infinite;
+          animation: crashRight 5s infinite cubic-bezier(0, -0.55, 0.27, 1.55);
         }
       }
       #fire {
@@ -81,14 +95,16 @@ h2 {
         align-items: center;
         flex-wrap: nowrap;
         position: absolute;
-        top: -150px;
+        top: -160px;
         left: -10px;
         img {
           z-index: 3;
         }
       }
       #title {
-        color: $gold;
+        color: $white;
+        font-style: italic;
+        animation: scrollHorizontally 10s infinite;
         z-index: 4;
         font-size: 2rem;
         font-family: courier;

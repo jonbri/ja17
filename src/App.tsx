@@ -68,7 +68,7 @@ const App = () => {
             </div>
             <img id="bills-img" className="helmet" />
             <img id="jets-img" className="helmet" />
-            <div id="title">Buffalo 2024</div>
+            <div id="title">BUFFALO 2024</div>
           </div>
         </h1>
       </header>
@@ -76,10 +76,6 @@ const App = () => {
       <div id="content">
         <div className="section">
           <div id="calendar">
-            <div className={classnames(getDayClassName(22))}>
-              <header>Sun Dec 22</header>
-              <div>home</div>
-            </div>
             <div className={classnames(getDayClassName(23))}>
               <header>Mon Dec 23</header>
               <div>home</div>
@@ -167,9 +163,6 @@ const App = () => {
               Walking directions
             </a>
           </div>
-          <a href="https://www.google.com/maps/dir/164b+Slade+Ave,+West+Seneca,+NY+14224/Highmark+Stadium,+Bills+Drive,+Orchard+Park,+NY/@42.8056686,-78.8244353,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89d30ef5b97d497f:0xca83aab437c3c149!2m2!1d-78.7910484!2d42.833521!1m5!1m1!1s0x89d305815466a99f:0xf0b562b249eaa7f5!2m2!1d-78.7869723!2d42.7737546!3e2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
-            <img id="hotel-to-stadium-img" />
-          </a>
         </div>
 
         <div className="section">
@@ -201,23 +194,34 @@ const App = () => {
           <div>Tickets can be purchased online or at the resort.</div>
           <div>Rentals: skis, boots, helmets</div>
           <div>They have food</div>
-          <a href="https://www.kissingbridge.com/">
-            <img id="kissing-bridge-map-img" />
-          </a>
         </div>
 
         <div className="section">
-          <h2>TODO</h2>
+          <h2>Pack</h2>
           <ul>
-            <li>Snow pants</li>
+            <li>
+              Clothes
+              <ul>
+                <li>Snow pants</li>
+                <li>Boots</li>
+                <li>TODO: thermals</li>
+              </ul>
+            </li>
             <li>Make a poster</li>
-            <li>Basho mp3</li>
-            <li>Basho mp3</li>
-            <li>Basho mp3</li>
-            <li>Basho mp3</li>
-            <li>Basho mp3</li>
+            <li>Music</li>
           </ul>
         </div>
+      </div>
+
+      <div>
+        <a href="https://cdn.prod.website-files.com/6716e32c7e124cd50e0116ad/6751e6fe2663f6f43d743347_KB%20Slope%20Map.png">
+          <img id="kissing-bridge-map-img" />
+        </a>
+      </div>
+      <div>
+        <a href="https://www.google.com/maps/dir/164b+Slade+Ave,+West+Seneca,+NY+14224/Highmark+Stadium,+Bills+Drive,+Orchard+Park,+NY/@42.8056686,-78.8244353,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89d30ef5b97d497f:0xca83aab437c3c149!2m2!1d-78.7910484!2d42.833521!1m5!1m1!1s0x89d305815466a99f:0xf0b562b249eaa7f5!2m2!1d-78.7869723!2d42.7737546!3e2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+          <img id="hotel-to-stadium-img" />
+        </a>
       </div>
     </div>
   );
