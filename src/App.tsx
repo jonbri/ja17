@@ -134,16 +134,16 @@ const App = () => {
             <strong>Hotel Country Inn & Suites</strong> by Radisson, Buffalo South I-90
           </div>
           <div>
+            <strong>Check-in: Thu, Dec 26 3:00pm</strong>
+          </div>
+          <div>
+            <strong>Check-out: Mon, Dec 30 12:00pm</strong>
+          </div>
+          <div>
             164b Slade Ave, West Seneca, NY 14224{" "}
             <a href="https://www.google.com/maps/place/164b+Slade+Ave,+West+Seneca,+NY+14224/">
               Map
             </a>
-          </div>
-          <div>
-            <strong>Check-in:</strong> Thu, Dec 26, 3:00PM
-          </div>
-          <div>
-            <strong>Check-out:</strong> Mon, Dec 30, noon
           </div>
           <div>Suite, 1 Bedroom</div>
           <div>Expedia itinerary: 72989913686821</div>
@@ -151,13 +151,12 @@ const App = () => {
         </div>
 
         <div className="section">
-          <h2>Game Dec 29, 1:00PM</h2>
+          <h2>Game Day</h2>
           <div>
             <strong>Section: 216, Row 5, Seats 1-3</strong>
           </div>
-          <div>Insurance? TODO, I have it, look it up</div>
-          <div>Ticket Protector II EUSP2461187567 $132.00</div>
           <div>Tickets are in Apple Wallet</div>
+          <div>Allianz Ticket Protector II: EUSP2461187567</div>
           <div>
             <a href="https://www.google.com/maps/dir/164b+Slade+Ave,+West+Seneca,+NY+14224/Highmark+Stadium,+Bills+Drive,+Orchard+Park,+NY/@42.8056686,-78.8244353,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89d30ef5b97d497f:0xca83aab437c3c149!2m2!1d-78.7910484!2d42.833521!1m5!1m1!1s0x89d305815466a99f:0xf0b562b249eaa7f5!2m2!1d-78.7869723!2d42.7737546!3e2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
               Walking directions
@@ -167,11 +166,11 @@ const App = () => {
 
         <div className="section">
           <h2>Stadium Parking</h2>
-          <div>Confirmation number 3000-0625-3346-3694-8</div>
           <div>
-            General Admission ticket in <strong>Section LOT7</strong>
+            General Admission: <strong>LOT 7</strong>
           </div>
           <div>Ticket is in Apple Wallet</div>
+          <div>Confirmation number: 3000-0625-3346-3694-8</div>
         </div>
 
         <div className="section">
@@ -183,17 +182,20 @@ const App = () => {
               directions
             </a>
           </div>
-          <div>Mon-Wed: 10am-9pm, Thurs-Fri 10am-10pm, Sat 9am-10pm, Sun 9am-8pm</div>
-          <div>
-            "Kissing Bridge is located at 10296 State Road Glenwood NY 14069.
-            <br />
-            <strong>Note</strong> that many online maps or GPS resources will try to send you to KB
-            via Murray Hill Rd. This is a seasonal road and is impassable during the winter
-            months.""
-          </div>
-          <div>Tickets can be purchased online or at the resort.</div>
+          <div>Hours: Fri 10-10, Sat 9-10</div>
+          <div>Tickets can be purchased online or at the resort</div>
           <div>Rentals: skis, boots, helmets</div>
-          <div>They have food</div>
+          <div>Can eat there</div>
+          <div>
+            <em>
+              "Kissing Bridge is located at 10296 State Road Glenwood NY 14069.
+              <br />
+              <strong>Note</strong> that many online maps or GPS resources will try to send you to
+              KB via Murray Hill Rd.
+              <br />
+              This is a seasonal road and is impassable during the winter months."
+            </em>
+          </div>
         </div>
 
         <div className="section">
