@@ -10,16 +10,37 @@ import "@fontsource/ubuntu";
 
 const App = () => {
   useEffect(() => {
-    const [billsImg, jetsImg, rageImg, hotelToStadiumImg, kissingBridgeMapImg] = [
+    const [
+      billsImg,
+      jetsImg,
+      rageImg0,
+      rageImg1,
+      rageImg2,
+      rageImg3,
+      rageImg4,
+      rageImg5,
+      hotelToStadiumImg,
+      kissingBridgeMapImg,
+    ] = [
       document.getElementById("bills-img") as HTMLImageElement | null,
       document.getElementById("jets-img") as HTMLImageElement | null,
-      document.getElementById("rage-img") as HTMLImageElement | null,
+      document.getElementById("rage-img0") as HTMLImageElement | null,
+      document.getElementById("rage-img1") as HTMLImageElement | null,
+      document.getElementById("rage-img2") as HTMLImageElement | null,
+      document.getElementById("rage-img3") as HTMLImageElement | null,
+      document.getElementById("rage-img4") as HTMLImageElement | null,
+      document.getElementById("rage-img5") as HTMLImageElement | null,
       document.getElementById("hotel-to-stadium-img") as HTMLImageElement | null,
       document.getElementById("kissing-bridge-map-img") as HTMLImageElement | null,
     ];
     if (billsImg) billsImg.src = billsImgUrl;
     if (jetsImg) jetsImg.src = jetsImgUrl;
-    if (rageImg) rageImg.src = rageImgUrl;
+    if (rageImg0) rageImg0.src = rageImgUrl;
+    if (rageImg1) rageImg1.src = rageImgUrl;
+    if (rageImg2) rageImg2.src = rageImgUrl;
+    if (rageImg3) rageImg3.src = rageImgUrl;
+    if (rageImg4) rageImg4.src = rageImgUrl;
+    if (rageImg5) rageImg5.src = rageImgUrl;
     if (hotelToStadiumImg) hotelToStadiumImg.src = hotelToStadiumImgUrl;
     if (kissingBridgeMapImg) kissingBridgeMapImg.src = kissingBridgeMapImgUrl;
   }, []);
@@ -36,9 +57,18 @@ const App = () => {
     <div id="container">
       <header>
         <h1>
-          <img id="bills-img" />
-          <img id="rage-img" />
-          <img id="jets-img" />
+          <div>
+            <span id="fire">
+              <img id="rage-img0" />
+              <img id="rage-img1" />
+              <img id="rage-img2" />
+              <img id="rage-img3" />
+              <img id="rage-img4" />
+              <img id="rage-img5" />
+            </span>
+            <img id="bills-img" />
+            <img id="jets-img" />
+          </div>
         </h1>
       </header>
 

@@ -51,21 +51,32 @@ h2 {
   > header {
     text-align: center;
     height: 120px;
-    img {
-      width: 100px;
-      height: 100px;
-      &#bills-img {
-        z-index: 2;
-        position: absolute;
-        animation: crashLeft 2s infinite cubic-bezier(0, -0.55, 0.27, 1.55);
+    border: 1px solid green;
+    position: relative;
+    h1 > div {
+      border: 1px solid black;
+      overflow-x: hidden;
+      img {
+        width: 100px;
+        height: 100px;
+        &#bills-img {
+          z-index: 2;
+          /* animation: crashLeft 2s infinite cubic-bezier(0, -0.55, 0.27, 1.55); */
+        }
+        &#jets-img {
+          z-index: 1;
+          /* animation: crashRight 4s infinite; */
+        }
       }
-      &:nth-child(2) {
-        border: 5px solid $gold;
-      }
-      &#jets-img {
-        z-index: 1;
+      #fire {
         position: absolute;
-        animation: crashRight 4s infinite;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        img {
+          width: 200px;
+          z-index: 1;
+        }
       }
     }
   }
