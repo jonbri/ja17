@@ -213,15 +213,30 @@ const App = () => {
         </div>
       </div>
 
-      <div>
-        <a href="https://cdn.prod.website-files.com/6716e32c7e124cd50e0116ad/6751e6fe2663f6f43d743347_KB%20Slope%20Map.png">
-          <img id="kissing-bridge-map-img" />
-        </a>
+      <div id="images">
+        <div>
+          <a href="https://cdn.prod.website-files.com/6716e32c7e124cd50e0116ad/6751e6fe2663f6f43d743347_KB%20Slope%20Map.png">
+            <img id="kissing-bridge-map-img" />
+          </a>
+        </div>
+        <div>
+          <a href="https://www.google.com/maps/dir/164b+Slade+Ave,+West+Seneca,+NY+14224/Highmark+Stadium,+Bills+Drive,+Orchard+Park,+NY/@42.8056686,-78.8244353,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89d30ef5b97d497f:0xca83aab437c3c149!2m2!1d-78.7910484!2d42.833521!1m5!1m1!1s0x89d305815466a99f:0xf0b562b249eaa7f5!2m2!1d-78.7869723!2d42.7737546!3e2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+            <img id="hotel-to-stadium-img" />
+          </a>
+        </div>
       </div>
-      <div>
-        <a href="https://www.google.com/maps/dir/164b+Slade+Ave,+West+Seneca,+NY+14224/Highmark+Stadium,+Bills+Drive,+Orchard+Park,+NY/@42.8056686,-78.8244353,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89d30ef5b97d497f:0xca83aab437c3c149!2m2!1d-78.7910484!2d42.833521!1m5!1m1!1s0x89d305815466a99f:0xf0b562b249eaa7f5!2m2!1d-78.7869723!2d42.7737546!3e2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
-          <img id="hotel-to-stadium-img" />
-        </a>
+
+      <br />
+
+      <div id="footer">
+        <ul>
+          <li>
+            <a href="https://github.com/jonbri/ja17">GitHub</a>
+          </li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Buffalo,_New_York">Wiki</a>
+          </li>
+        </ul>
       </div>
     </div>
   );

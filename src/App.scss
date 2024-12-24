@@ -162,3 +162,15 @@ h2 {
     }
   }
 }
+
+#footer {
+  margin-top: 100px;
+  background-color: $red;
+  border: 1px solid $blue;
+  border-radius: 10px;
+  margin: auto;
+  a {
+    color: $gold;
+    text-decoration: none;
+  }
+}
