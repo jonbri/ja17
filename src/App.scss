@@ -22,7 +22,7 @@ $black: #000;
     transform: translateX(-100px);
   }
   50% {
-    transform: translateX(300px);
+    transform: translateX(400px);
   }
   100% {
     transform: translateX(-50px);
@@ -51,11 +51,11 @@ h2 {
   > header {
     text-align: center;
     height: 120px;
-    border: 1px solid green;
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
     h1 > div {
-      border: 1px solid black;
-      overflow: hidden;
       .helmet {
         width: 100px;
         height: 100px;
@@ -77,9 +77,11 @@ h2 {
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
+        position: absolute;
+        top: -150px;
+        left: -10px;
         img {
-          z-index: 1;
-          border: 1px solid red;
+          z-index: 3;
         }
       }
     }
